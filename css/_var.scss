@@ -1,0 +1,41 @@
+$colors:(
+    red: #f33e3e,
+    orange: #eeae37,
+    yellow: #f3f33c,
+    l-yellow:#fd9,
+    green: #14c314,
+    tiff-blue: #0abab5,
+    blue: #2525e2,
+    l-blue: #53a9e2,
+    indigo: #7634a5,
+    purple: #7c2f7c,
+    light: #eee,
+    dark: #333,
+    chocolate: #D2691E
+);
+
+$breakPoints:(
+    basic: 0,
+    sm: 600px,
+    md: 720px,
+    lg: 1024px,
+    xl: 1200px
+);
+
+$padding: 15px;
+
+$grid: 12;
+
+$directions:(
+    t: top,
+    b: bottom,
+    l: left,
+    r: right
+);
+
+$displays:(
+    b: block,
+    t: table,
+    ib: inline-block,
+    n: none
+);

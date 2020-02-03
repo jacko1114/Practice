@@ -1,0 +1,15 @@
+.text-center{
+    text-align: center;
+}
+.text-color{
+  background: -webkit-linear-gradient(#fd9, #ffab01);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  
+
+@each $name,$color in $colors {
+  .text-#{ $name } {
+      color: $color;
+  }
+}

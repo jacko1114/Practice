@@ -1,0 +1,65 @@
+.full-width {
+  width: 100%;
+}
+@each $bName, $bSize in $breakPoints {
+  @media (min-width: $bSize) {
+    .fixed-width {
+      @if ($bName == basic) {
+        width: 100% !important;
+      } @else {
+        width: $bSize !important;
+      }
+      margin: auto;
+    }
+    @for $i from 1 through $grid {
+      @if ($bName == basic) {
+        .col-#{ $i } {
+          width: 100% / $grid * $i !important;
+          padding: $padding;
+          float: left;
+        }
+      } @else {
+        .col-#{ $bName }-#{ $i } {
+          width: 100% / $grid * $i !important;
+          padding: $padding; 
+          float: left;
+        }
+      }
+    }
+  }
+}
+
+
+@for $i from 1 through $grid {
+  .p-#{ $i }{
+    padding: $padding * $i;
+  }
+}
+
+@each $name,$direction in $directions {
+  @for $i from 1 through $grid {
+    .p#{ $name }-#{ $i } {
+      padding-#{ $direction }: $padding * $i;
+    }
+  }
+}
+
+
+@for $i from 1 through $grid {
+  .m-#{ $i }{
+    margin: $padding * $i;
+  }
+}
+
+@each $name,$direction in $directions {
+  @for $i from 1 through $grid {
+    .m#{ $name }-#{ $i } {
+      margin-#{ $direction }: $padding * $i;
+    }
+  }
+}
+@each $name,$display in $displays {
+  .d-#{ $name } {
+    display: $display;
+  }
+}
