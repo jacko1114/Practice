@@ -27,6 +27,40 @@
         }
       }
     }
+    @for $i from 1 through $grid {
+      @if ($bName != basic) {
+        .pt-#{ $bName }-#{ $i } {
+          padding-top: $padding * $i;
+        }
+        .pb-#{ $bName }-#{ $i } {
+          padding-bottom: $padding * $i;
+        }
+        .pl-#{ $bName }-#{ $i } {
+          padding-left: $padding * $i;
+        }
+        .pr-#{ $bName }-#{ $i } {
+          padding-right: $padding * $i;
+        }
+        .p-#{ $bName }-#{ $i } {
+          padding: $padding * $i;
+        }
+        .mt-#{ $bName }-#{ $i } {
+          margin-top: $padding * $i;
+        }
+        .mb-#{ $bName }-#{ $i } {
+          margin-bottom: $padding * $i;
+        }
+        .ml-#{ $bName }-#{ $i } {
+          margin-left: $padding * $i;
+        }
+        .mr-#{ $bName }-#{ $i } {
+          margin-right: $padding * $i;
+        }
+        .m-#{ $bName }-#{ $i } {
+          margin: $padding * $i;
+        }
+      }
+    }
   }
 }
 
