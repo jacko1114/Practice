@@ -61,6 +61,14 @@
         }
       }
     }
+    @if($bName != basic){
+      .d-#{ $bName }-n {
+        display: none;
+      }
+      .d-#{ $bName }-b {
+        display: block;
+      }
+    }
   }
 }
 
