@@ -19,6 +19,15 @@
   margin: auto;
   height: 50px; 
 }
+@mixin cloud($t,$p1,$p2,$p3,$p4) {
+      background: #fff;
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      left:0;
+      top: $t;
+      border-radius: $p1 $p2 $p3 $p4;
+}
 nav {
   width: 100%;
   position: fixed;
@@ -159,35 +168,24 @@ header {
     width: 100%;
     height: 500px;
     position: relative;
-    .cloud {
-      background: #fff;
-      position: absolute;
-      width: 100%;
-      height: 100px;
-      left:0;
+    .cloud {    
       &:nth-child(1) {
-        top: 0;
-        border-radius: 30px 50px 50px 0;
+        @include cloud(0,30px,50px,50px,0);
       }
       &:nth-child(2) {
-        top: 100px;
-        border-radius: 0 50px 50px 0;
+        @include cloud(100px,0,50px,50px,0);
       }
       &:nth-child(3) {
-        top: 200px;
-        border-radius: 0 50px 50px 0;
+        @include cloud(200px,0,50px,50px,0);
       }
       &:nth-child(4){
-        top: 300px;
-        border-radius: 0 50px 50px 0;
+        @include cloud(300px,0,50px,50px,0);
       }
       &:nth-child(5){
-        top: 400px;
-        border-radius: 0 50px 50px 0;
+        @include cloud(400px,0,50px,50px,0);
       }
       &:nth-child(6){
-        top: 500px;
-        border-radius: 0 50px 50px 30px;
+        @include cloud(500px,0,50px,50px,30px);
       }
     }
   }
