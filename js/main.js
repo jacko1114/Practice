@@ -11,5 +11,30 @@ $(document).ready(function(){
         }else{
             $('.collapse').show();
         }
-    })
-})  
+    })  
+    //點擊移動到該處效果
+    $('nav').find('a').on("click",function(e){
+      e.preventDefault();
+      let target = $(this).data(target);
+      let offset = $(target).offset().top;
+    $('html,body').animate({
+      scrollTop: offset
+    },200)
+  });
+     e.preventDefault();
+     $('html,body').animate({
+        scrollTop: 0
+      },200)
+  });
+  //回到最上面效果
+    $(window).scroll(function(){
+       let h = $(window).scrollTop();
+       if(h > 600){
+         $('#gotop').fadeIn();
+         $('nav').addClass('active');
+       }else {
+         $('#gotop').fadeOut();
+         $('nav').removeClass('active');
+     }
+  });
+})
