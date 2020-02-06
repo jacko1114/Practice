@@ -17,16 +17,18 @@ $(document).ready(function(){
       e.preventDefault();
       let target = $(this).data(target);
       let offset = $(target).offset().top;
-    $('html,body').animate({
-      scrollTop: offset
-    },200)
-  });
-     e.preventDefault();
-     $('html,body').animate({
-        scrollTop: 0
-      },200)
-  });
+      $('html,body').animate({
+        scrollTop: offset
+        },200)
+    });
   //回到最上面效果
+    $('#gotop').on("click",function(e){
+      e.preventDefault();
+      $('html,body').animate({
+        scrollTop: 0
+        },200)
+    });
+  //判斷gotop出現時機
     $(window).scroll(function(){
        let h = $(window).scrollTop();
        if(h > 600){
