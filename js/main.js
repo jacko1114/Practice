@@ -7,7 +7,7 @@ $(document).ready(function(){
         let w = $(window).width();
         if(w < 600){
             $('.collapse').hide();
-            $('.hamburger').removeClass('.hamburger-x');
+            $('.hamburger').removeClass('hamburger-x');
         }else{
             $('.collapse').show();
         }
