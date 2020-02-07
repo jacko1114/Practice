@@ -27,37 +27,37 @@
         }
       }
     }
-    @for $i from 1 through $grid {
+    @for $i from 0 through $grid {
       @if ($bName != basic) {
         .pt-#{ $bName }-#{ $i } {
-          padding-top: $padding * $i;
+          padding-top: $padding * $i !important;
         }
         .pb-#{ $bName }-#{ $i } {
-          padding-bottom: $padding * $i;
+          padding-bottom: $padding * $i !important;
         }
         .pl-#{ $bName }-#{ $i } {
-          padding-left: $padding * $i;
+          padding-left: $padding * $i !important;
         }
         .pr-#{ $bName }-#{ $i } {
-          padding-right: $padding * $i;
+          padding-right: $padding * $i !important;
         }
         .p-#{ $bName }-#{ $i } {
-          padding: $padding * $i;
+          padding: $padding * $i !important;
         }
         .mt-#{ $bName }-#{ $i } {
-          margin-top: $padding * $i;
+          margin-top: $padding * $i !important;
         }
         .mb-#{ $bName }-#{ $i } {
-          margin-bottom: $padding * $i;
+          margin-bottom: $padding * $i !important;
         }
         .ml-#{ $bName }-#{ $i } {
-          margin-left: $padding * $i;
+          margin-left: $padding * $i !important;
         }
         .mr-#{ $bName }-#{ $i } {
-          margin-right: $padding * $i;
+          margin-right: $padding * $i !important;
         }
         .m-#{ $bName }-#{ $i } {
-          margin: $padding * $i;
+          margin: $padding * $i !important;
         }
       }
     }
@@ -74,13 +74,13 @@
 
 @each $name,$direction in $directions {
   @if ($name == null){
-    @for $i from 1 through $grid {
+    @for $i from 0 through $grid {
       .p-#{ $i } {
         padding: $padding * $i;
       }
     }
   } @else {
-    @for $i from 1 through $grid {
+    @for $i from 0 through $grid {
       .p#{ $name }-#{ $i } {
         padding-#{ $direction }: $padding * $i;
       }
@@ -90,13 +90,13 @@
 
 @each $name,$direction in $directions {
   @if ($name == null){
-    @for $i from 1 through $grid {
+    @for $i from 0 through $grid {
       .m-#{ $i } {
         margin: $padding * $i;
       }
     }
   } @else {
-    @for $i from 1 through $grid {
+    @for $i from 0 through $grid {
       .m#{ $name }-#{ $i } {
         margin-#{ $direction }: $padding * $i;
       }
