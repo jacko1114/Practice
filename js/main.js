@@ -5,7 +5,7 @@ $(document).ready(function(){
   })
     $(window).resize(function(){
       let w = $(window).width();
-      if(w < 600){
+      if(w < 720){
           $('.collapse').hide();
           $('.hamburger').removeClass('hamburger-x');
       }else{

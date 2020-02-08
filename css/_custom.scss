@@ -20,25 +20,25 @@
   height: 50px; 
 }
 @mixin cloud($t,$p1,$p2,$p3,$p4) {
-      background: #fff;
-      position: absolute;
-      width: 100%;
-      height: 82px;
-      left: 0;
-      top: $t;
-      border-radius: $p1 $p2 $p3 $p4;
-      z-index: 999;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  height: 82px;
+  left: 0;
+  top: $t;
+  border-radius: $p1 $p2 $p3 $p4;
+  z-index: 999;
 }
 nav {
   width: 100%;
   position: fixed;
-  z-index: 999;
+  z-index: 888;
   a {
     color: map-get($colors,light);
-      text-decoration: none;
-      line-height: 60px;
-      display: block;
-      padding: 0 15px;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+    padding: 0 15px;
   }
   .collapse {
     a {
@@ -166,8 +166,9 @@ header {
           height: 16px;
           border-radius: 50%;
           background: #333;
-          position: absolute;
-          left: 30px;
+          position: relative;
+          top: 20px;
+          left: -30px;
         }
       }
     }
@@ -176,7 +177,7 @@ header {
 
 .investor {
   width: 100%;
-  height: 1200px;
+  height: 1300px;
   h1 {
     @include title(400px);
   }
@@ -311,6 +312,7 @@ footer {
     letter-spacing: 2px;
     font-weight: 600;
     transition: .4s;
+    z-index: 999;
     &:hover {
       color: rgb(255, 255, 255);
       background: rgba(0,0,0,.8);
@@ -338,15 +340,28 @@ footer {
   }
 }
 
-
 @media (min-width:600px) {
+  .lecturer {
+    height: 1100px;
+  }
+  .investor {
+    height: 1000px;  
+  }
+  .goal {
+    height: 2300px;
+  }
+  .share {
+    height: 1800px;
+  }
+}
+@media (min-width:720px) {
   nav {
     a {
       color: map-get($colors, light);
       text-decoration: none;
       line-height: 60px;
       display: inline-block;
-      padding: 0 15px;
+      padding: 0 12px;
     }
     width: 100%;
     height: 60px;
@@ -354,7 +369,7 @@ footer {
       float: left;
     }
     .collapse {
-      display: inline-flex;
+      // display: inline-flex;
       float: right;
     }
     .hamburger {
@@ -404,7 +419,8 @@ footer {
       ul {
         li {
           &:before{
-            left: 600px !important;
+            left: -40px;
+            top: 20px;
           }
         }
       }
@@ -414,11 +430,17 @@ footer {
     height: 700px;
   }
   .goal {
-    height: 2500px;
+    height: 3300px;
     img {
       width: 80%;
       margin: 0  10%;
     }
+  }
+  .share {
+    height: 1100px;
+  }
+  .activity {
+    height: 800px;
   }
   .d-sm-b {
     display: block !important;
