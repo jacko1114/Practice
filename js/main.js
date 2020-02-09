@@ -37,7 +37,7 @@ $(document).ready(function(){
        if(h > 600){
         $('#gotop').animate({
           right: +50
-         },0).fadeIn(500);
+         },0).fadeIn("slow");
          $('nav').addClass('active');
        }else {
          $('#gotop').animate({
