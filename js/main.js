@@ -22,6 +22,7 @@ $(document).ready(function(){
         // scrollTop: offset
         scrollTop: offset - navHeight
         },200)
+      $('.collapse').hide();
     });
   //回到最上面效果
     $('#gotop').on("click",function(e){
