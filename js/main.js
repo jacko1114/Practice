@@ -3,7 +3,6 @@ $(document).ready(function(){
       $(this).toggleClass('hamburger-x');
       $('.collapse').slideToggle();
   })
-    $('.collapse').css.display = 'none';
     $(window).resize(function(){
       let w = $(window).width();
       if(w < 720){
