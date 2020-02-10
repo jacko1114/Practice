@@ -11,11 +11,12 @@
   font-size: 30px;
   letter-spacing: 2px;
   line-height: 5px;
-  display: block;
-  color: map-get($map: $colors, $key: light);
+  display: inline-block;
+  color: map-get($colors, light);
   text-shadow: 1px 2px 2px map-get($map: $colors, $key: dark);
   clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
   width: $w;
+  border-radius: 30px;
   margin: auto;
   height: 50px; 
   overflow: hidden;
