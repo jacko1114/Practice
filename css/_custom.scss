@@ -17,9 +17,8 @@
   clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
   width: $w;
   border-radius: 30px;
-  margin: auto;
+  margin: 0 auto;
   height: 50px; 
-  overflow: hidden;
 }
 @mixin cloud($t,$p1,$p2,$p3,$p4) {
   background: #fff;
