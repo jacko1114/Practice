@@ -11,7 +11,7 @@
   font-size: 30px;
   letter-spacing: 2px;
   line-height: 5px;
-  display: inline-block;
+  display: block;
   color: map-get($colors, light);
   text-shadow: 1px 2px 2px map-get($map: $colors, $key: dark);
   clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
@@ -130,7 +130,7 @@ header {
 }
 
 .lecturer {
-  height: 700px;
+  height: 1000px;
   img {
     position: relative;
     z-index: 1;
@@ -178,15 +178,15 @@ header {
 
 .investor {
   width: 100%;
-  height: 1300px;
+  height: 1100px;
   h1 {
-    @include title(200px);
+    @include title(350px);
   }
 }
 
 .goal {
   width: 100%;
-  height: 1900px;
+  height: 1600px;
   h1 {
     @include title(300px);
   }
@@ -205,11 +205,12 @@ header {
 
 .share {
   width: 100%;
-  height: 1900px;
+  height: 2100px;
   h1 {
     @include title(200px);
   }
   .avatar {
+    position: relative;
     img {
       width: 150px;
       height: 150px;
@@ -218,7 +219,7 @@ header {
     }
     h3 {
       display: inline-block;
-      width: 250px;
+      width: 200px;
       height: 80px;
       line-height: 80px;
       background: map-get($colors, l-blue);
@@ -226,7 +227,8 @@ header {
       font-size: 30px;
       border-radius: 5px;
       position: relative;
-      left: -30px;
+      left: 120px;
+      top: -100px;
       letter-spacing: 2px;
     }
   }
@@ -296,6 +298,7 @@ header {
 }
 
 footer {
+  position: relative;
   height: 50px;
   #gotop{
     display: none;
@@ -303,7 +306,7 @@ footer {
     width: 62px;
     height: 62px;
     background: map-get($colors,dark);
-    right: 30px;
+    right: 20px !important;
     bottom: 30px;
     text-align: center;
     line-height: 85px;
@@ -340,7 +343,53 @@ footer {
     }
   }
 }
-
+@media (min-width:400px) {
+  .lecturer {
+    height: 1150px;
+    h1 {
+      @include title(300px);
+    }
+  }
+  .investor {
+    height: 950px;
+    h1 {
+      @include title(300px);
+    }
+  }
+  .goal {
+    height: 2200px;
+    h1 {
+      @include title(300px);
+    }
+  }
+  .video {
+    height: 1200px;
+    h1 {
+      @include title(300px);
+    }
+  }
+  .share {
+    height: 1800px;
+    h1 {
+      @include title(300px);
+    }
+    h3 {
+      position: relative;
+      left: -15px !important;
+      top: 0 !important;
+    }
+  }
+  .activity {
+    h1 {
+      @include title(300px);
+    }
+  }
+  .signup {
+    h1 {
+      @include title(300px);
+    }
+  }
+}
 @media (min-width:600px) {
   .lecturer {
     height: 1100px;
@@ -370,7 +419,6 @@ footer {
       float: left;
     }
     .collapse {
-      // display: inline-flex;
       float: right;
     }
     .hamburger {
@@ -388,6 +436,9 @@ footer {
   }
   .lecturer {
     position: relative;
+    h1 {
+      @include title(300px);
+    }
     .clouds {
       width: 45%;
       height: 100%;
@@ -429,6 +480,9 @@ footer {
   }
   .investor {
     height: 700px;
+    h1 {
+      @include title(300px);
+    }
   }
   .goal {
     height: 3300px;
@@ -436,12 +490,32 @@ footer {
       width: 80%;
       margin: 0  10%;
     }
+    h1 {
+      @include title(300px);
+    }
+  }
+  .video {
+    height: 1200px;
+    h1 {
+      @include title(300px);
+    }
   }
   .share {
     height: 1100px;
+    h1 {
+      @include title(300px);
+    }
   }
   .activity {
     height: 800px;
+    h1 {
+      @include title(300px);
+    }
+  }
+  .signup {
+    h1 {
+      @include title(300px);
+    }
   }
   .d-sm-b {
     display: block !important;

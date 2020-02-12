@@ -19,7 +19,7 @@ function css(){
     .pipe(dest('./css/'));
 }
 
-function cssm2(){
+function css_m(){
     return src('./css/all.scss')
     .pipe(maps.init())
     .pipe(sass())
@@ -36,5 +36,5 @@ function cssm2(){
 }
 
 exports.css = css;
-exports.cssm2 = cssm2;
-exports.default = parallel(css, cssm2); 
+exports.css_m = css_m;
+exports.default = parallel(css, css_m); 
