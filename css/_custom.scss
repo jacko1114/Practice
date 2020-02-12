@@ -13,7 +13,7 @@
   line-height: 5px;
   display: block;
   color: map-get($colors, light);
-  text-shadow: 1px 2px 2px map-get($map: $colors, $key: dark);
+  text-shadow: 1px 2px 2px map-get($colors, dark);
   clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
   width: $w;
   border-radius: 30px;
@@ -21,7 +21,7 @@
   height: 50px; 
 }
 @mixin cloud($t,$p1,$p2,$p3,$p4) {
-  background: #fff;
+  background: map-get($colors,light);
   position: absolute;
   width: 100%;
   height: 82px;
@@ -44,7 +44,7 @@ nav {
   .collapse {
     a {
       &:hover {
-        background-color: map-get($map: $colors, $key: light);
+        background-color: map-get($colors, light);
         color: map-get($colors, dark);
       }
     }
@@ -102,13 +102,13 @@ header {
   a {
     display: block;
     text-decoration: none;
-    color:map-get($map: $colors, $key: light);
+    color:map-get($colors, light);
     width: 300px;
     line-height: 10px;
     margin: auto;
     clip-path: polygon(20% 10%, 80% 10%, 85% 50%, 80% 95%, 20% 95%, 15% 50%);
     &:hover {
-      background-color: map-get($map: $colors, $key: light);
+      background-color: map-get($colors, light);
       color: map-get($colors, purple);
     }
   }
@@ -284,7 +284,7 @@ header {
     letter-spacing: 2px;
     cursor: pointer;
     &:hover {
-      background-color: map-get($map: $colors, $key: indigo);
+      background-color: map-get($colors, indigo);
       color: map-get($colors, orange);
       border:  solid 10px map-get($colors, orange);
     }
@@ -403,9 +403,14 @@ footer {
   .share {
     height: 1800px;
   }
+  .d-sm-b {
+    display: block !important;
+  }
 }
 @media (min-width:720px) {
   nav {
+    width: 100%;
+    height: 60px;
     a {
       color: map-get($colors, light);
       text-decoration: none;
@@ -413,8 +418,6 @@ footer {
       display: inline-block;
       padding: 0 12px;
     }
-    width: 100%;
-    height: 60px;
     .logo {
       float: left;
     }
@@ -436,14 +439,22 @@ footer {
   }
   .lecturer {
     position: relative;
+    height: 900px;
     h1 {
       @include title(300px);
+    }
+    img,.sns {
+      position: relative;
+      z-index: 999;
+    }
+    .height {
+      height: 250px;
     }
     .clouds {
       width: 45%;
       height: 100%;
       position: absolute;
-      z-index: 0;
+      z-index: 998;
       top: 0;
       left: 0;
       .cloud {    
@@ -517,7 +528,7 @@ footer {
       @include title(300px);
     }
   }
-  .d-sm-b {
+  .d-md-b {
     display: block !important;
   }
 }

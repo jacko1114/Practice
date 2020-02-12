@@ -3263,6 +3263,9 @@ footer #gotop:before {
   .share {
     height: 1800px;
   }
+  .d-sm-b {
+    display: block !important;
+  }
 }
 
 @media (min-width: 720px) {
@@ -3297,6 +3300,7 @@ footer #gotop:before {
   }
   .lecturer {
     position: relative;
+    height: 900px;
   }
   .lecturer h1 {
     font-size: 30px;
@@ -3312,16 +3316,23 @@ footer #gotop:before {
     margin: 0 auto;
     height: 50px;
   }
+  .lecturer img, .lecturer .sns {
+    position: relative;
+    z-index: 999;
+  }
+  .lecturer .height {
+    height: 250px;
+  }
   .lecturer .clouds {
     width: 45%;
     height: 100%;
     position: absolute;
-    z-index: 0;
+    z-index: 998;
     top: 0;
     left: 0;
   }
   .lecturer .clouds .cloud:nth-child(1) {
-    background: #fff;
+    background: #eee;
     position: absolute;
     width: 100%;
     height: 82px;
@@ -3331,7 +3342,7 @@ footer #gotop:before {
     z-index: 999;
   }
   .lecturer .clouds .cloud:nth-child(2) {
-    background: #fff;
+    background: #eee;
     position: absolute;
     width: 100%;
     height: 82px;
@@ -3341,7 +3352,7 @@ footer #gotop:before {
     z-index: 999;
   }
   .lecturer .clouds .cloud:nth-child(3) {
-    background: #fff;
+    background: #eee;
     position: absolute;
     width: 100%;
     height: 82px;
@@ -3351,7 +3362,7 @@ footer #gotop:before {
     z-index: 999;
   }
   .lecturer .clouds .cloud:nth-child(4) {
-    background: #fff;
+    background: #eee;
     position: absolute;
     width: 100%;
     height: 82px;
@@ -3361,7 +3372,7 @@ footer #gotop:before {
     z-index: 999;
   }
   .lecturer .clouds .cloud:nth-child(5) {
-    background: #fff;
+    background: #eee;
     position: absolute;
     width: 100%;
     height: 82px;
@@ -3371,7 +3382,7 @@ footer #gotop:before {
     z-index: 999;
   }
   .lecturer .clouds .cloud:nth-child(6) {
-    background: #fff;
+    background: #eee;
     position: absolute;
     width: 100%;
     height: 82px;
@@ -3487,7 +3498,7 @@ footer #gotop:before {
     margin: 0 auto;
     height: 50px;
   }
-  .d-sm-b {
+  .d-md-b {
     display: block !important;
   }
 }
