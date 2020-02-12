@@ -24,6 +24,7 @@ $(document).ready(function(){
         scrollTop: offset - navHeight
         },200)
       $('.collapse').hide();
+      $('.hamburger').removeClass('hamburger-x');
     });
   //回到最上面效果
     $('#gotop').on("click",function(e){
