@@ -2811,10 +2811,11 @@ header .money:before, header .money:after {
   text-shadow: 1px 2px 2px #333;
   -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
           clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-  width: 300px;
+  width: 250px;
   border-radius: 30px;
   margin: 0 auto;
   height: 50px;
+  font-size: 1rem;
 }
 
 .lecturer .border-r {
@@ -2873,6 +2874,7 @@ header .money:before, header .money:after {
   border-radius: 30px;
   margin: 0 auto;
   height: 50px;
+  font-size: 1rem;
 }
 
 .goal {
@@ -2893,6 +2895,7 @@ header .money:before, header .money:after {
   border-radius: 30px;
   margin: 0 auto;
   height: 50px;
+  font-size: 1rem;
 }
 
 .video {
@@ -2913,6 +2916,7 @@ header .money:before, header .money:after {
   border-radius: 30px;
   margin: 0 auto;
   height: 50px;
+  font-size: 1rem;
 }
 
 .video iframe {
@@ -2937,6 +2941,7 @@ header .money:before, header .money:after {
   border-radius: 30px;
   margin: 0 auto;
   height: 50px;
+  font-size: 1rem;
 }
 
 .share .avatar {
@@ -2987,6 +2992,7 @@ header .money:before, header .money:after {
   border-radius: 30px;
   margin: 0 auto;
   height: 50px;
+  font-size: 1rem;
 }
 
 .activity h5 {
@@ -3016,6 +3022,7 @@ header .money:before, header .money:after {
   border-radius: 30px;
   margin: 0 auto;
   height: 50px;
+  font-size: 1rem;
 }
 
 .signup input[type="text"], .signup input[type="tel"], .signup input[type="email"] {
@@ -3024,6 +3031,10 @@ header .money:before, header .money:after {
   height: 50px;
   padding: 20px;
   outline: 0;
+  display: block;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
 }
 
 .signup input[type="radio"] {
@@ -3034,9 +3045,10 @@ header .money:before, header .money:after {
   display: inline-block;
 }
 
-.signup input[type="submit"] {
+.signup .submit {
   display: block;
   text-decoration: none;
+  text-align: center;
   color: #333;
   font-size: 18px;
   width: 200px;
@@ -3049,17 +3061,10 @@ header .money:before, header .money:after {
   cursor: pointer;
 }
 
-.signup input[type="submit"]:hover {
+.signup .submit:hover {
   background-color: #7634a5;
   color: #eeae37;
   border: solid 10px #eeae37;
-}
-
-.signup input[type="text"], .signup input[type="tel"], .signup input[type="email"] {
-  display: block;
-  width: 100%;
-  height: 20px;
-  border-radius: 5px;
 }
 
 footer {
@@ -3142,10 +3147,11 @@ footer #gotop:before {
     text-shadow: 1px 2px 2px #333;
     -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
             clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-    width: 300px;
+    width: 250px;
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 2rem;
   }
   .investor {
     height: 950px;
@@ -3163,6 +3169,7 @@ footer #gotop:before {
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 1.5rem;
   }
   .goal {
     height: 2200px;
@@ -3176,10 +3183,11 @@ footer #gotop:before {
     text-shadow: 1px 2px 2px #333;
     -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
             clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-    width: 300px;
+    width: 250px;
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 2rem;
   }
   .video {
     height: 1200px;
@@ -3193,10 +3201,11 @@ footer #gotop:before {
     text-shadow: 1px 2px 2px #333;
     -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
             clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-    width: 300px;
+    width: 250px;
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 2rem;
   }
   .share {
     height: 1800px;
@@ -3210,10 +3219,11 @@ footer #gotop:before {
     text-shadow: 1px 2px 2px #333;
     -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
             clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-    width: 300px;
+    width: 200px;
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 2rem;
   }
   .share h3 {
     position: relative;
@@ -3229,10 +3239,11 @@ footer #gotop:before {
     text-shadow: 1px 2px 2px #333;
     -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
             clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-    width: 300px;
+    width: 250px;
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 2rem;
   }
   .signup h1 {
     font-size: 30px;
@@ -3243,10 +3254,11 @@ footer #gotop:before {
     text-shadow: 1px 2px 2px #333;
     -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
             clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-    width: 300px;
+    width: 250px;
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 2rem;
   }
 }
 
@@ -3311,10 +3323,11 @@ footer #gotop:before {
     text-shadow: 1px 2px 2px #333;
     -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
             clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-    width: 300px;
+    width: 250px;
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 2rem;
   }
   .lecturer img, .lecturer .sns {
     position: relative;
@@ -3411,6 +3424,7 @@ footer #gotop:before {
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 1.5rem;
   }
   .goal {
     height: 3300px;
@@ -3428,10 +3442,11 @@ footer #gotop:before {
     text-shadow: 1px 2px 2px #333;
     -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
             clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-    width: 300px;
+    width: 250px;
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 2rem;
   }
   .video {
     height: 1200px;
@@ -3445,10 +3460,11 @@ footer #gotop:before {
     text-shadow: 1px 2px 2px #333;
     -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
             clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-    width: 300px;
+    width: 250px;
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 2rem;
   }
   .share {
     height: 1100px;
@@ -3462,10 +3478,11 @@ footer #gotop:before {
     text-shadow: 1px 2px 2px #333;
     -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
             clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-    width: 300px;
+    width: 200px;
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 2rem;
   }
   .activity {
     height: 800px;
@@ -3479,10 +3496,11 @@ footer #gotop:before {
     text-shadow: 1px 2px 2px #333;
     -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
             clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-    width: 300px;
+    width: 250px;
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 2rem;
   }
   .signup h1 {
     font-size: 30px;
@@ -3493,10 +3511,11 @@ footer #gotop:before {
     text-shadow: 1px 2px 2px #333;
     -webkit-clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
             clip-path: polygon(20% 30%, 80% 30%, 90% 50%, 80% 75%, 20% 75%, 10% 50%);
-    width: 300px;
+    width: 250px;
     border-radius: 30px;
     margin: 0 auto;
     height: 50px;
+    font-size: 2rem;
   }
   .d-md-b {
     display: block !important;

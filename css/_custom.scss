@@ -7,7 +7,7 @@
   border-radius: 20px;
   left: 0;
 }
-@mixin title($w) {
+@mixin title($w,$s) {
   font-size: 30px;
   letter-spacing: 2px;
   line-height: 5px;
@@ -18,7 +18,8 @@
   width: $w;
   border-radius: 30px;
   margin: 0 auto;
-  height: 50px; 
+  height: 50px;
+  font-size: $s; 
 }
 @mixin cloud($t,$p1,$p2,$p3,$p4) {
   background: map-get($colors,light);
@@ -136,7 +137,7 @@ header {
     z-index: 1;
   }
   h1 {
-    @include title(300px);
+    @include title(250px,1rem);
   }
   .border-r {
     border-radius: 30px;
@@ -180,7 +181,7 @@ header {
   width: 100%;
   height: 1100px;
   h1 {
-    @include title(350px);
+    @include title(350px,1rem);
   }
 }
 
@@ -188,7 +189,7 @@ header {
   width: 100%;
   height: 1600px;
   h1 {
-    @include title(300px);
+    @include title(300px,1rem);
   }
 }
 
@@ -196,7 +197,7 @@ header {
   width: 100%;
   height: 1200px;
   h1 {
-    @include title(300px);
+    @include title(300px,1rem);
   }
   iframe {
     width: 100%;
@@ -207,7 +208,7 @@ header {
   width: 100%;
   height: 2100px;
   h1 {
-    @include title(200px);
+    @include title(200px,1rem);
   }
   .avatar {
     position: relative;
@@ -241,7 +242,7 @@ header {
   width: 100%;
   height: 700px;
   h1 {
-    @include title(300px);
+    @include title(300px,1rem);
   }
   h5 {
     border-radius: 20px 20px 0 0;
@@ -256,7 +257,7 @@ header {
 .signup {
   height: 950px;
   h1 {
-    @include title(300px);
+    @include title(300px,1rem);
   }
   input[type="text"],input[type="tel"],input[type="email"] {
     margin-top: 10px;
@@ -264,6 +265,10 @@ header {
     height: 50px;
     padding: 20px;
     outline: 0;
+    display: block;
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
   }
   input[type="radio"] {
     display: block;
@@ -271,9 +276,10 @@ header {
   label {
     display: inline-block;
   }
-  input[type="submit"]{
+  .submit{
     display: block;
     text-decoration: none;
+    text-align: center;
     color: map-get($colors, dark);
     font-size: 18px;
     width: 200px;
@@ -288,12 +294,6 @@ header {
       color: map-get($colors, orange);
       border:  solid 10px map-get($colors, orange);
     }
-  }
-  input[type="text"], input[type="tel"], input[type="email"] {
-    display: block;
-    width: 100%;
-    height: 20px;
-    border-radius: 5px;
   }
 }
 
@@ -347,31 +347,31 @@ footer {
   .lecturer {
     height: 1150px;
     h1 {
-      @include title(300px);
+      @include title(250px,2rem);
     }
   }
   .investor {
     height: 950px;
     h1 {
-      @include title(300px);
+      @include title(300px,1.5rem);
     }
   }
   .goal {
     height: 2200px;
     h1 {
-      @include title(300px);
+      @include title(250px,2rem);
     }
   }
   .video {
     height: 1200px;
     h1 {
-      @include title(300px);
+      @include title(250px,2rem);
     }
   }
   .share {
     height: 1800px;
     h1 {
-      @include title(300px);
+      @include title(200px,2rem);
     }
     h3 {
       position: relative;
@@ -381,12 +381,12 @@ footer {
   }
   .activity {
     h1 {
-      @include title(300px);
+      @include title(250px,2rem);
     }
   }
   .signup {
     h1 {
-      @include title(300px);
+      @include title(250px,2rem);
     }
   }
 }
@@ -441,7 +441,7 @@ footer {
     position: relative;
     height: 900px;
     h1 {
-      @include title(300px);
+      @include title(250px,2rem);
     }
     img,.sns {
       position: relative;
@@ -492,7 +492,7 @@ footer {
   .investor {
     height: 700px;
     h1 {
-      @include title(300px);
+      @include title(300px,1.5rem);
     }
   }
   .goal {
@@ -502,30 +502,30 @@ footer {
       margin: 0  10%;
     }
     h1 {
-      @include title(300px);
+      @include title(250px,2rem);
     }
   }
   .video {
     height: 1200px;
     h1 {
-      @include title(300px);
+      @include title(250px,2rem);
     }
   }
   .share {
     height: 1100px;
     h1 {
-      @include title(300px);
+      @include title(200px,2rem);
     }
   }
   .activity {
     height: 800px;
     h1 {
-      @include title(300px);
+      @include title(250px,2rem);
     }
   }
   .signup {
     h1 {
-      @include title(300px);
+      @include title(250px,2rem);
     }
   }
   .d-md-b {
