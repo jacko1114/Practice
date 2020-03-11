@@ -17,19 +17,19 @@ $(document).ready(function() {
     .find("a")
     .on("click", function(e) {
       e.preventDefault();
-      let navHeight = 60;
-      let target = $(this).data("target");
-      let offset = $(target).offset().top;
-      $("html,body").animate(
-        {
-          scrollTop: offset - navHeight
-        },
-        500
-      );
       $(this)
         .siblings()
         .removeClass("active");
       $(this).addClass("active");
+      let target = $(this).data("target");
+      let offset = $(target).offset().top;
+      let navHeight = 60;
+      $("html,body").animate(
+        {
+          scrollTop: offset - navHeight
+        },
+        400
+      );
       let w = $(window).width();
       if (w < 720) {
         $(".collapse").hide();
@@ -51,11 +51,13 @@ $(document).ready(function() {
     let h = $(window).scrollTop();
     if (h > 60) {
       $("#gotop").show();
+      $("nav").addClass("active");
     } else {
       $("#gotop").hide();
       $("nav")
         .find("a")
         .removeClass("active");
+      $("nav").removeClass("active");
     }
   });
 });
